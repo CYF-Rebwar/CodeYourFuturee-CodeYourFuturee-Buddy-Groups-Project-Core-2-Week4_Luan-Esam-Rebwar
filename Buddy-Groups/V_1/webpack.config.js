@@ -76,6 +76,7 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html", // template file to use for generating the HTML file to serve our webpack bundle (e.g. index.html)
+      minify: false, // to minify the HTML file (e.g. index.html) to serve our webpack bundle (e.g. index.html) (default is true) (to avoid browser caching)
     }),
     // new CleanWebpackPlugin(), // clean the build folder before each build
   ], // new MiniCssExtractPlugin({filename: "style.css"})
@@ -90,7 +91,7 @@ const config = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"], //delete style-loader and add MiniCssExtractPlugin.loader
       },
       {
-        test: /\.(png|jpe?g|gif)$/i, // png, jpg, jpeg, gif
+        test: /\.(png|jpe?g|gif|webp)$/i, // png, jpg, jpeg, gif, webp
         use: [
           {
             loader: "file-loader",
