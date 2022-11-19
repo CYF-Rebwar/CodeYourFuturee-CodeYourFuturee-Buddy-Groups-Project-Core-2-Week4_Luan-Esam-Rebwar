@@ -1,8 +1,18 @@
+import lua from "../assets/images/lua.png";
+import reb from "../assets/images/reb.png";
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");
+  //   const luann = document.querySelector(".luan-img");
+  //   const luanImg = document.createElement("img");
+  //   luanImg.setAttribute("src", lua);
+  //   luann.appendChild(luanImg);
+  const luann = document.querySelector(".luan-img");
+  const rebwar = document.querySelector(".reb-img");
+  luann.src = lua;
+  rebwar.src = reb;
 
   let curSlide = 0;
   const maxSlide = slides.length;

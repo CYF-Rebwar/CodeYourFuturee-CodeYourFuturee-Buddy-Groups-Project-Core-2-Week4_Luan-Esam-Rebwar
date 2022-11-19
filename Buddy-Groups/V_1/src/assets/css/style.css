@@ -368,3 +368,17 @@ footer {
   margin-top: 7rem;
   font-size: 3rem;
 }
+.luan-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: table-cell;
+}
+.reb-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: table-cell;
+}
